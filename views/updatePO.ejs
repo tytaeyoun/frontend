@@ -238,12 +238,19 @@
 
                 <div class="h3">발주서</div>
 
-                <div class="input-group">
+                <!-- <div class="input-group">
                     <input type="file" class="form-control" id="inputGroupFile04"
                         aria-describedby="inputGroupFileAddon04" aria-label="Upload">
+                        
                     <button class="btn btn-outline-secondary" type="button" onclick="sendFile()"
                         id="inputGroupFileAddon04">Upload -  발주서</button>
-                </div>
+                </div> -->
+
+                <form action="/upload" method="POST" enctype="multipart/form-data">
+                    <input type="file" name="file">
+                    <button type="submit">Upload</button>
+                  </form>
+                  
 
                 
 
